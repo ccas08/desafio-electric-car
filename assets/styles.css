@@ -1,0 +1,238 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "search"
+        "main"
+        "footer";
+        font-family: "Jost", sans-serif;
+}
+
+#navbar {
+    display: flex;
+   
+    background-color: rgb(57, 124, 207);
+    color: rgb(247, 247, 247);
+    flex-direction: column;
+    
+    
+}
+
+.sort-container {
+    margin: 20px 0; /* Añade margen arriba y abajo del contenedor */
+    margin-left: 10px;
+    padding: 10px; /* Añade relleno alrededor del contenedor */
+    
+    box-sizing: border-box; /* Hace que el padding y el border no aumenten el tamaño total del contenedor */
+    background-color: #adaeaf;
+}
+
+.sort-container label {
+    margin-right: 10px; /* Añade margen a la derecha de la etiqueta */
+}
+
+.sort-container select {
+    padding: 5px; /* Añade relleno al selector */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   margin-top: auto;
+}
+.content {
+    flex-grow: 1; /* Hace que el contenido crezca para ocupar todo el espacio extra */
+}
+#header {
+    display: flex;
+    align-items: center; /* Esto alinea los elementos verticalmente en el centro */
+     align-self: flex-start; /* Esto alinea el encabezado en la parte superior */
+
+}
+
+#menu-icon-car {
+    width: 50px; /* Ajusta este valor a la cantidad que desees */
+    margin-right: 10px; /* Añade un poco de espacio entre el icono y el título */
+   
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center; /* Centra el contenido de la tarjeta */
+}
+
+.card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+}
+
+.card button {
+    background-color:rgb(57, 124, 207); /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    padding: 10px 20px; /* Añade relleno al botón */
+    margin-top: 10px; /* Añade margen arriba del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+}
+
+.card button:hover {
+    background-color: rgb(57, 124, 207); /* Cambia el color de fondo del botón al pasar el ratón sobre él */
+}
+
+.card h3 {
+    margin: 10px 0; /* Añade margen arriba y abajo del título */
+    font-size: 18px; /* Cambia el tamaño del texto del título */
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.search {
+    grid-area: search;
+    display: flex;
+    justify-content: space-around;
+}
+
+#final-header {
+    display: none; /* Oculta el #final-header en todas las pantallas por defecto */
+    width: 100%; /* Ajusta el ancho del #final-header */
+    text-align: center; /* Centra el contenido del #final-header */
+}
+
+#navbar-icon-footer{
+    width: 50px; /* Ajusta este valor a la cantidad que desees */
+    margin-right: 10px; /* Añade un poco de espacio entre el icono y el título */
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 110px; /* Ajusta este valor a la cantidad de padding que desees */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin-left: 100px;
+    
+}
+.grid-container img {
+    max-width: 100%; /* Las imágenes nunca serán más anchas que su contenedor */
+    height: auto; /* Mantener la relación de aspecto de las imágenes */
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+#menu-icon-facebook {
+    width: 50px; 
+    margin-right: 10px; 
+   
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination {
+    align-self: center;
+}
+
+.pagination ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    color: #000;
+}
+
+.pagination ul li {
+    margin: 0 10px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+    #navbar ul {
+        display: none; /* Ocultar en pantallas pequeñas */
+    }
+
+    .grid-container {
+        margin-top: 20px;
+    }
+    #menu-icon {
+        display: block; /* Mostrar en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .grid-container {
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 769px) {
+
+    #final-header {
+        margin-top: auto;
+        margin-bottom: 10px;
+        display: block; /* Muestra el #final-header en pantallas grandes */
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    body {
+        flex-direction: row;
+    }
+
+    #navbar {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+    }
+
+    
+    
+
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    .footer {
+        grid-area: footer;
+        display: none;
+        
+    }
+}
+
