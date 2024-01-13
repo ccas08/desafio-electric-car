@@ -19,20 +19,20 @@ body {
 }
 
 .sort-container {
-    margin: 20px 0; /* Añade margen arriba y abajo del contenedor */
+    margin: 20px 0;
     margin-left: 10px;
-    padding: 10px; /* Añade relleno alrededor del contenedor */
+    padding: 10px; 
     
-    box-sizing: border-box; /* Hace que el padding y el border no aumenten el tamaño total del contenedor */
+    box-sizing: border-box; 
     background-color: #adaeaf;
 }
 
 .sort-container label {
-    margin-right: 10px; /* Añade margen a la derecha de la etiqueta */
+    margin-right: 10px; 
 }
 
 .sort-container select {
-    padding: 5px; /* Añade relleno al selector */
+    padding: 5px; 
 }
 
 .main-container {
@@ -42,18 +42,18 @@ body {
    margin-top: auto;
 }
 .content {
-    flex-grow: 1; /* Hace que el contenido crezca para ocupar todo el espacio extra */
+    flex-grow: 1;
 }
 #header {
     display: flex;
-    align-items: center; /* Esto alinea los elementos verticalmente en el centro */
-     align-self: flex-start; /* Esto alinea el encabezado en la parte superior */
+    align-items: center; 
+     align-self: flex-start; 
 
 }
 
 #menu-icon-car {
-    width: 50px; /* Ajusta este valor a la cantidad que desees */
-    margin-right: 10px; /* Añade un poco de espacio entre el icono y el título */
+    width: 50px; 
+    margin-right: 10px; 
    
 }
 
@@ -62,29 +62,29 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    text-align: center; /* Centra el contenido de la tarjeta */
+    text-align: center; 
 }
 
 .card img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+    width: 100%; 
 }
 
 .card button {
-    background-color:rgb(57, 124, 207); /* Cambia el color de fondo del botón */
-    color: white; /* Cambia el color del texto del botón */
-    padding: 10px 20px; /* Añade relleno al botón */
-    margin-top: 10px; /* Añade margen arriba del botón */
-    border: none; /* Elimina el borde del botón */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    background-color:rgb(57, 124, 207); 
+    color: white; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    border: none; 
+    cursor: pointer; 
 }
 
 .card button:hover {
-    background-color: rgb(57, 124, 207); /* Cambia el color de fondo del botón al pasar el ratón sobre él */
+    background-color: rgb(57, 124, 207); 
 }
 
 .card h3 {
-    margin: 10px 0; /* Añade margen arriba y abajo del título */
-    font-size: 18px; /* Cambia el tamaño del texto del título */
+    margin: 10px 0; 
+    font-size: 18px; 
 }
 
 #navbar ul li a {
@@ -100,14 +100,14 @@ body {
 }
 
 #final-header {
-    display: none; /* Oculta el #final-header en todas las pantallas por defecto */
-    width: 100%; /* Ajusta el ancho del #final-header */
-    text-align: center; /* Centra el contenido del #final-header */
+    display: none; 
+    width: 100%; 
+    text-align: center; 
 }
 
 #navbar-icon-footer{
-    width: 50px; /* Ajusta este valor a la cantidad que desees */
-    margin-right: 10px; /* Añade un poco de espacio entre el icono y el título */
+    width: 50px; 
+    margin-right: 10px; 
 }
 
 .main {
@@ -115,7 +115,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-left: 110px; /* Ajusta este valor a la cantidad de padding que desees */
+    padding-left: 110px; 
 }
 
 
@@ -127,14 +127,14 @@ body {
     
 }
 .grid-container img {
-    max-width: 100%; /* Las imágenes nunca serán más anchas que su contenedor */
-    height: auto; /* Mantener la relación de aspecto de las imágenes */
+    max-width: 100%; 
+    height: auto; 
 }
 
 #menu-icon {
     font-size: 30px;
     cursor: pointer;
-    display: none; /* Ocultar por defecto */
+    display: none;
     margin-left: 20px;
     margin-right: 20px;
     
@@ -174,22 +174,22 @@ body {
 .footer {
     grid-area: footer;
     display: flex;
-    flex-direction: column; /* Alinea los elementos en una columna */
-    justify-content: center; /* Centra los elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     margin-top: 30px;
 }
 
 @media (max-width: 576px) {
     #navbar ul {
-        display: none; /* Ocultar en pantallas pequeñas */
+        display: none; 
     }
 
     .grid-container {
         margin-top: 20px;
     }
     #menu-icon {
-        display: block; /* Mostrar en pantallas pequeñas */
+        display: block; 
     }
 }
 
@@ -206,7 +206,7 @@ body {
     #final-header {
         margin-top: auto;
         margin-bottom: 10px;
-        display: block; /* Muestra el #final-header en pantallas grandes */
+        display: block; 
     }
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
